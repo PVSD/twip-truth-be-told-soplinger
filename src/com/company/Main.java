@@ -18,7 +18,7 @@ public class Main {
     }
 
 
-    public static void main(String[] args) throws IOException, java.lang.Exception, java.lang.InterruptedException {
+    public static void main(String[] args) throws IOException {
 
         boolean plskeepgoing = true;
         char array[] = new char[10000];
@@ -30,7 +30,7 @@ public class Main {
         FileWriter writer = new FileWriter("TruthTable.txt");
         FileReader reader = new FileReader("TruthTable.txt");
 
-        S
+        
             }
         }
 
