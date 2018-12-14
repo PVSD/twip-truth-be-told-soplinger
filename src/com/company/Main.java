@@ -30,54 +30,7 @@ public class Main {
         FileWriter writer = new FileWriter("TruthTable.txt");
         FileReader reader = new FileReader("TruthTable.txt");
 
-        Scanner kbInput = new Scanner(System.in);
-        System.out.println("Would you like to start?");
-        bb = kbInput.next();
-
-        while(plskeepgoing) {
-
-            String a = "true", b = "true", s2 = "yes";
-
-            if (bb.toLowerCase().equals("yes")) {
-
-                System.out.println("Please Input your boolean expression, use a and b as your variables");
-                s2 = kbInput.next();
-                System.out.println("A" + "\t \t" + "B" + "\t \t" + s2);
-                writer.write("A" + "\t \t" + "B" + "\t \t" + s2);
-                writer.flush();
-                for (int i = 0; i < 4; i++) {
-                    if (i < 2) {
-                        a = "true";
-                        if (i % 2 == 0) {
-                            b = "true";
-                        } else {
-                            b = "false";
-                        }
-                    }else{
-                            a = "false";
-                        }
-                }
-            }
-
-            Boolean spiderman = stringToBoolean(s2.replace("a", a).replace("b", b));
-
-            if (spiderman) {
-                System.out.println(a + "\t" + b + "\t" + spiderman);
-                writer.write(a + "\t" + b + "\t" + spiderman + "\n");
-                writer.flush();
-            } else {
-                System.out.println(a + "\t" + b + "\t" + spiderman);
-                writer.write(a + "\t" + b + "\t" + spiderman + "\n");
-                writer.flush();
-            }
-
-            System.out.println("Do you want to keep going?");
-            outtie = kbInput.next();
-
-            if (outtie.toLowerCase().equals("no"))
-                plskeepgoing = false;
-            else if (outtie.toLowerCase().equals("yes"))
-                System.out.println("Lets a go");
+        S
             }
         }
 
